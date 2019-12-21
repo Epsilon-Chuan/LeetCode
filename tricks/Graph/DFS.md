@@ -40,3 +40,7 @@ void Graph<Tv, Te>::DFS ( int v, int& clock ) { //assert: 0 <= v < n
 ```C++
 // Waiting for you...
 ```
+# DFS的应用
+> DFS无疑是最为重要的图遍历算法。基于DFS的的框架，可以导出和建立大量的图算法。
+## 拓扑排序
+## 双连通域分解
