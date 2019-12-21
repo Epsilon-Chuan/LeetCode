@@ -13,9 +13,9 @@
 * ### 先序遍历
 ![](https://github.com/Epsilon-Chuan/LeetCode/blob/master/tricks/%E4%BA%8C%E5%8F%89%E6%A0%91/%E7%A4%BA%E6%84%8F%E5%9B%BE/%E5%85%88%E5%BA%8F%E9%81%8D%E5%8E%86.jpg)
 * ### 中序遍历
-![](https://github.com/Epsilon-Chuan/LeetCode/blob/master/%E4%BA%8C%E5%8F%89%E6%A0%91/%E7%A4%BA%E6%84%8F%E5%9B%BE/%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86.jpg)
+![](https://github.com/Epsilon-Chuan/LeetCode/blob/master/tricks/%E4%BA%8C%E5%8F%89%E6%A0%91/%E7%A4%BA%E6%84%8F%E5%9B%BE/%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86.jpg)
 * ### 后序遍历
-![](https://github.com/Epsilon-Chuan/LeetCode/blob/master/%E4%BA%8C%E5%8F%89%E6%A0%91/%E7%A4%BA%E6%84%8F%E5%9B%BE/%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86.jpg)
+![](https://github.com/Epsilon-Chuan/LeetCode/blob/master/tricks/%E4%BA%8C%E5%8F%89%E6%A0%91/%E7%A4%BA%E6%84%8F%E5%9B%BE/%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86.jpg)
 ## 2. BFS型
 * ### 层次遍历
-![](https://github.com/Epsilon-Chuan/LeetCode/blob/master/%E4%BA%8C%E5%8F%89%E6%A0%91/%E7%A4%BA%E6%84%8F%E5%9B%BE/%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86.jpg)
+![](https://github.com/Epsilon-Chuan/LeetCode/blob/master/tricks/%E4%BA%8C%E5%8F%89%E6%A0%91/%E7%A4%BA%E6%84%8F%E5%9B%BE/%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86.jpg)
