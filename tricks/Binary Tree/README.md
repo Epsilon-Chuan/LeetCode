@@ -11,11 +11,11 @@
 >   * 对于中序遍历，各节点在遍历序列中的局部次序与按照有序树定义所确定的全局左、右次序完全吻合，故而中序遍历在很多方面扮演着重要的角色。
 > * 三种遍历方法的迭代实现均使用了辅助结构`栈`，与之形成对比的是，BFS型的层次遍历法使用了辅助结构`队列`。
 * ### 先序遍历
-![](https://github.com/Epsilon-Chuan/LeetCode/blob/master/tricks/%E4%BA%8C%E5%8F%89%E6%A0%91/%E7%A4%BA%E6%84%8F%E5%9B%BE/%E5%85%88%E5%BA%8F%E9%81%8D%E5%8E%86.jpg)
+![](./示意图/先序遍历.jpg)
 * ### 中序遍历
-![](https://github.com/Epsilon-Chuan/LeetCode/blob/master/tricks/%E4%BA%8C%E5%8F%89%E6%A0%91/%E7%A4%BA%E6%84%8F%E5%9B%BE/%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86.jpg)
+![](./示意图/中序遍历.jpg)
 * ### 后序遍历
-![](https://github.com/Epsilon-Chuan/LeetCode/blob/master/tricks/%E4%BA%8C%E5%8F%89%E6%A0%91/%E7%A4%BA%E6%84%8F%E5%9B%BE/%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86.jpg)
+![](./示意图/后序遍历.jpg)
 ## 2. BFS型
 * ### 层次遍历
-![](https://github.com/Epsilon-Chuan/LeetCode/blob/master/tricks/%E4%BA%8C%E5%8F%89%E6%A0%91/%E7%A4%BA%E6%84%8F%E5%9B%BE/%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86.jpg)
+![](./示意图/层次遍历.jpg)
