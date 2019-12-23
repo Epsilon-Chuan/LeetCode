@@ -1,5 +1,7 @@
 # 深度优先遍历(deep-first traverse, DFS)
+
 ## 递归版
+
 ```C++
 /******************************************************************************************
  * Data Structures in C++
@@ -33,14 +35,21 @@ void Graph<Tv, Te>::DFS ( int v, int& clock ) { //assert: 0 <= v < n
    status ( v ) = VISITED; fTime ( v ) = ++clock; //至此，当前顶点v方告访问完毕
 }
 ```
+
 ## 迭代版
+
 > 通过引入`栈结构`，动态记录从起始顶点s到当前顶点之间通路上的各个顶点，其中栈顶对应于当前顶点。
-每当遇到处于UNDISCOVERED状态的顶点，则将其转换为DISCOVERED状态，并令其入栈；
-一旦当前顶点的所有邻居都不再处于UNDISCOVERED状态，则将其转为VISITED状态，并令其出栈。
+> 每当遇到处于UNDISCOVERED状态的顶点，则将其转换为DISCOVERED状态，并令其入栈；
+> 一旦当前顶点的所有邻居都不再处于UNDISCOVERED状态，则将其转为VISITED状态，并令其出栈。
+
 ```C++
 // Waiting for you...
 ```
+
 # DFS的应用
+
 > DFS无疑是最为重要的图遍历算法。基于DFS的的框架，可以导出和建立大量的图算法。
+
 ## 拓扑排序
+
 ## 双连通域分解
