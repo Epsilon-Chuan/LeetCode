@@ -16,3 +16,11 @@
 6. [Subsets](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/078.%20Subsets.md)
 7. [Subsets II](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/090.%20Subsets%20II.md)
 8. [Palindrome Partitioning](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/131.%20Palindrome%20Partitioning.md)
+
+### 动态规划题
+
+Some similar problems.
+
+1. [Unique Paths](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/062.%20Unique%20Paths.md)
+2. [Unique Paths II](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/063.%20Unique%20Paths%20II.md)
+3. [Minimum Path Sum](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/064.%20Minimum%20Path%20Sum.md)
