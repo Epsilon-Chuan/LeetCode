@@ -16,6 +16,7 @@
 6. [Subsets](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/078.%20Subsets.md)
 7. [Subsets II](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/090.%20Subsets%20II.md)
 8. [Palindrome Partitioning](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/131.%20Palindrome%20Partitioning.md)
+9. [Combinations](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/077.%20Combinations.md)
 
 ### 动态规划题
 
