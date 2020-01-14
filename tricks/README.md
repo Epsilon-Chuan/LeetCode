@@ -25,3 +25,4 @@ Some similar problems.
 1. [Unique Paths](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/062.%20Unique%20Paths.md)
 2. [Unique Paths II](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/063.%20Unique%20Paths%20II.md)
 3. [Minimum Path Sum](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/064.%20Minimum%20Path%20Sum.md)
+4. [Decode Ways](https://github.com/Epsilon-Chuan/LeetCode/blob/master/problems/091.%20Decode%20Ways.md)(据说是)
