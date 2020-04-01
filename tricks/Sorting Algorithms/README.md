@@ -9,3 +9,7 @@
 | 归并排序 |  O(nlogn)  |  O(nlogn)  |   O(n)   |
 |  堆排序  |  O(nlogn)  |  O(nlogn)  |   O(1)   |
 | 基数排序 | O(d(n+rd)) | O(d(n+rd)) |  O(rd)   |
+
+## 外部排序
+
+To be continued.
