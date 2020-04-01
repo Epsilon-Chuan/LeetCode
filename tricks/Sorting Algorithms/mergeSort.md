@@ -1,4 +1,6 @@
-# Merge Sort Code
+# Merge Sort
+
+## Code
 
 ```C++
 #include <vector>
