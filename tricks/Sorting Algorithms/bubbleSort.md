@@ -1,4 +1,6 @@
-# Bubble Sort Code
+# Bubble Sort
+
+# Code
 
 ```C++
 #include <vector>
