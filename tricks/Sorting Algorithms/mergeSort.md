@@ -6,24 +6,21 @@
 #include <vector>
 using namespace std;
 
-void merge(vector<int>&, long, long, long); // 声明
-void mergeSort(vector<int>& arr, long lo, long hi) // 左闭右开[lo, hi)
-{
-    if (hi - lo < 2) // 单元素区间自然有序
-        return;
+void merge(vector<int>&, long, long, long);           // 声明
+void mergeSort(vector<int>& arr, long lo, long hi) {  // 左闭右开[lo, hi)
+    if (hi - lo < 2) return;  // 单元素区间自然有序
     long mi = (lo + hi) / 2;
-    mergeSort(arr, lo, mi); // 排序左区间[lo, mi)
-    mergeSort(arr, mi, hi); // 排序右区间[mi, hi)
-    merge(arr, lo, mi, hi); // 归并
+    mergeSort(arr, lo, mi);  // 排序左区间[lo, mi)
+    mergeSort(arr, mi, hi);  // 排序右区间[mi, hi)
+    merge(arr, lo, mi, hi);  // 归并
 }
 
-void merge(vector<int>& arr, long lo, long mi, long hi)
-{
-    long frontLen = mi - lo; // 前(左）子向量的长度
+void merge(vector<int>& arr, long lo, long mi, long hi) {
+    long frontLen = mi - lo;  // 前(左）子向量的长度
     auto frontCopy = new int[frontLen];
-    for (long i = 0; i < frontLen; i++) // 复制前（左）子向量
+    for (long i = 0; i < frontLen; i++)  // 复制前（左）子向量
         frontCopy[i] = arr[lo + i];
-    long i = lo, l = 0, r = mi; // index of total, left, right vector
+    long i = lo, l = 0, r = mi;  // index of total, left, right vector
     while (i < hi) {
         if (r >= hi || (l < frontLen && frontCopy[l] <= arr[r]))
             arr[i++] = frontCopy[l++];
