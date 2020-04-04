@@ -6,8 +6,7 @@
 #include <vector>
 using namespace std;
 
-void bubbleSort(vector<int>& arr)
-{
+void bubbleSort(vector<int>& arr) {
     for (long i = 0; i < arr.size(); i++) {
         bool flag = true;
         for (long j = 0; j < arr.size() - i - 1; j++)
@@ -15,8 +14,7 @@ void bubbleSort(vector<int>& arr)
                 swap(arr[j], arr[j + 1]);
                 flag = false;
             }
-        if (flag == true)
-            return;
+        if (flag == true) return;
     }
 }
 ```
