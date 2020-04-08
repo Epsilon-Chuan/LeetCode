@@ -31,7 +31,7 @@ void merge(vector<int>& arr, long lo, long mi, long hi) {
 }
 ```
 
-> 上述`merge`函数中的`while`循环体稍显晦涩，可等效地拆解为如下三个部分：
+> 上述`merge`函数中的`while (i < hi) {}`循环体稍显晦涩，可等效地拆解为如下三个部分：
 
 ```C++
     while (l < frontLen && r < hi) {
