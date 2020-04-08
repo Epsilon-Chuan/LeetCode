@@ -34,14 +34,14 @@ void merge(vector<int>& arr, long lo, long mi, long hi) {
 > 上述`merge`函数中的`while`循环体稍显晦涩，可等效地拆解为如下三个部分：
 
 ```C++
-        while (l < frontLen && r < hi) {
-            if (frontCopy[l] <= arr[r])
-                arr[i++] = frontCopy[l++];
-            else {
-                count += r - mi + 1;
-                arr[i++] = arr[r++];
-            }
+    while (l < frontLen && r < hi) {
+        if (frontCopy[l] <= arr[r])
+            arr[i++] = frontCopy[l++];
+        else {
+            count += r - mi + 1;
+            arr[i++] = arr[r++];
         }
-        while (l < frontLen) arr[i++] = frontCopy[l++];  // 前子向量未处理完时
-        while (r < hi) arr[i++] = arr[r++];  // 后子向量未处理完时
+    }
+    while (l < frontLen) arr[i++] = frontCopy[l++];  // 前子向量未处理完时
+    while (r < hi) arr[i++] = arr[r++];  // 后子向量未处理完时
 ```
