@@ -3,6 +3,7 @@
 LeetCode的个人刷题历程，C++和Python的双实现。
 
 `./problems` 中为LeetCode题目；
+
 `./tricks` 中为一些“数据结构与算法”的基本思路/应用技巧，其内图件大多引自邓俊辉[《数据结构》](https://dsa.cs.tsinghua.edu.cn/~deng/ds/dsacpp/index.htm)。
 
 ## LeetCode题目之
