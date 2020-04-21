@@ -9,6 +9,7 @@ class Solution {
 public:
     vector<int> GetLeastNumbers_Solution(vector<int> input, int k) {
         if (k < 1 || k > input.size()) return vector<int>{};
+        if (k == input.size()) return input;
         int index = partition(input, 0, input.size());
         int start = 0, end = input.size();
         while (index != k) {
@@ -20,12 +21,7 @@ public:
                 index = partition(input, start, end);
             }
         }
-        vector<int> res(k);
-        cout << endl;
-        for (int i = 0; i < k; ++i) {
-            cout << input[i] << ends;
-            res[i] = input[i];
-        }
+        vector<int> res(input.begin(), input.begin() + k);
         return res;
     }
     int partition(vector<int>& input, int lo, int hi) {
@@ -39,7 +35,6 @@ public:
             input[hi - 1] = input[lo];
         }
         input[lo] = pivot;
-        cout << lo << ends;
         return lo;
     }
 };
@@ -47,5 +42,6 @@ public:
 int main() {
     vector<int> input{4, 5, 1, 6, 2, 7, 3, 8};
     Solution sol;
-    sol.GetLeastNumbers_Solution(input, 3);
+    auto res = sol.GetLeastNumbers_Solution(input, 8);
+    for (auto& num : res) cout << num << ends;
 }

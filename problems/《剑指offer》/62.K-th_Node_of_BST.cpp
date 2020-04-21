@@ -15,7 +15,7 @@ public:
         return helper(pRoot, k);
     }
 
-    // 天呐，递归是个什么东西呀！！！
+    // 我靠，递归是个什么东西啊！！！
     TreeNode* helper(TreeNode* root, int& k) {
         TreeNode* target = nullptr;
         if (root->left) target = helper(root->left, k);

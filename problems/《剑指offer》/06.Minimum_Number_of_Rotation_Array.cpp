@@ -10,12 +10,19 @@ class Solution {
 public:
     int minNumberInRotateArray(vector<int> rotateArray) {
         if (rotateArray.size() == 0) return 0;
-        int lo = 0, hi = rotateArray.size(), mi = lo + hi / 2;
+        int lo = 0, hi = rotateArray.size() - 1;
         while (lo < hi) {
+            // 确保这还是个旋转数组,因为++lo之后可能造成已经非旋转数组,唯有如此后续逻辑才对
+            if (rotateArray[lo] < rotateArray[hi]) break;
+
+            int mi = (lo + hi) / 2;
             if (rotateArray[lo] < rotateArray[mi])
-                lo = mi;
+                lo = mi + 1;
             else if (rotateArray[mi] < rotateArray[hi])
-                hi = mi + 1;
+                hi = mi;
+            else
+                ++lo;
         }
+        return rotateArray[lo];
     }
 };
