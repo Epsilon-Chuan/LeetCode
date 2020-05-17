@@ -21,7 +21,9 @@ class Solution {
 public:
     int maximalSquare(vector<vector<char>>& matrix) {
         // dp[i][j]表示以第i行第j列为右下角所能构成的最大正方形连长, 则递推式为:
+        // 当 matrix[i][j] == '0', dp[i][j] = 0; 当 matrix[i][j] == '1':
         // dp[i][j] = 1 + min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1]);
+
         if (matrix.empty()) return 0;
         int rows = matrix.size(), cols = matrix[0].size(), res = 0;
         vector<vector<int>> dp(rows + 1, vector<int>(cols + 1, 0));
