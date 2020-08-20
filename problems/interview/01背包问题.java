@@ -44,7 +44,7 @@ public class Main {
             v[i] = in.nextInt();
         }
         // dp[i][j]: 如果可选物品为（前） i 个物品、背包总可承重为 j，最大的价值
-        int[][] dp = new int[N + 1][M + 1];
+        int[][] dp = new int[N + 1][M + 1]; // 初始化为0
         for (int i = 1; i <= N; ++i)
             for (int j = 1; j <= M; ++j)
                 if (j < w[i]) // 背包承受力 < 当前物品重量，价值不变
