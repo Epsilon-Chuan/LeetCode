@@ -37,13 +37,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int N = in.nextInt(), M = in.nextInt();
-        int[] w = new int[N + 1], v = new int[N + 1]; // 重量和价值
+        int N = in.nextInt();
+        int M = in.nextInt();
+        int[] w = new int[N + 1]; // 重量
+        int[] v = new int[N + 1]; // 价值
         for (int i = 1; i <= N; ++i) {
             w[i] = in.nextInt();
             v[i] = in.nextInt();
         }
-        // dp[i][j]: 如果可选物品为（前） i 个物品、背包总可承重为 j，最大的价值
+        // dp[i][j]: 如果可选物品为（前）i个物品、背包总可承重为j，最大的价值
         int[][] dp = new int[N + 1][M + 1]; // 初始化为0
         for (int i = 1; i <= N; ++i)
             for (int j = 1; j <= M; ++j)
