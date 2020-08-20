@@ -32,27 +32,25 @@
 8
 */
 
-#include <algorithm>
-#include <iostream>
-#include <vector>
-using namespace std;
+import java.util.Scanner;
 
-int main() {
-    const int MAXN = 1000, MAXM = 1000;
-    int N, M;
-    int w[MAXN + 1], v[MAXN + 1];  // 重量和价值
-    // dp[i][j]: 如果可选物品为（前） i 个物品、背包总可承重为 j, 最大的价值
-    int dp[MAXN + 1][MAXM + 1] = {0};
-    while (cin >> N >> M) {
-        for (int i = 1; i <= N; ++i) cin >> w[i] >> v[i];
-
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int N = in.nextInt(), M = in.nextInt();
+        int[] w = new int[N + 1], v = new int[N + 1]; // 重量和价值
+        for (int i = 1; i <= N; ++i) {
+            w[i] = in.nextInt();
+            v[i] = in.nextInt();
+        }
+        // dp[i][j]: 如果可选物品为（前） i 个物品、背包总可承重为 j，最大的价值
+        int[][] dp = new int[N + 1][M + 1];
         for (int i = 1; i <= N; ++i)
-            for (int j = 1; j <= M; ++j) {
-                if (j < w[i])  // 背包承受力 < 当前物品重量，价值不变
+            for (int j = 1; j <= M; ++j)
+                if (j < w[i]) // 背包承受力 < 当前物品重量，价值不变
                     dp[i][j] = dp[i - 1][j];
-                else  // 当前物品重量在承受范围内，但需判断 “装 or 不装”
-                    dp[i][j] = max(dp[i - 1][j - w[i]] + v[i], dp[i - 1][j]);
-            }
-        cout << dp[N][M];
+                else // 当前物品重量在承受范围内，但需判断“装 or 不装”
+                    dp[i][j] = Math.max(dp[i - 1][j - w[i]] + v[i], dp[i - 1][j]);
+        System.out.println(dp[N][M]);
     }
 }
